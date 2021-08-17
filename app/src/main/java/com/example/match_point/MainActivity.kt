@@ -2,15 +2,17 @@ package com.example.match_point
 
 import android.app.Activity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import com.example.match_point.databinding.ActivityMainBinding
 
 class MainActivity : Activity() {
 
-    var player1:Player = Player(0,0,0)
-    var player2:Player = Player(0,0,0)
-    var match:Match = Match()
+    var player1 = Player(0,0,0)
+    var player2 = Player(0,0,0)
+    var match = Match()
 
     private lateinit var binding: ActivityMainBinding
 
@@ -19,50 +21,38 @@ class MainActivity : Activity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+    }
 
-        var textPoint = findViewById(R.id.myPoint) as TextView
-        var textRivalPoint = findViewById(R.id.rivalPoint) as TextView
-        var textSetPoint = findViewById(R.id.mySet) as TextView
-        var textRivalSetPoint = findViewById(R.id.rivalSet) as TextView
-        var textMyGame = findViewById(R.id.myGame) as TextView
-        var textRivalGame = findViewById(R.id.rivalGame) as TextView
-        var pointForMy = findViewById<Button>(R.id.me)
-        var pointForRival = findViewById<Button>(R.id.rival)
+    fun pointForMe(view: View) {
+        match.point(player1, player2)
+        translateAndShow()
+        println("caca")
+    }
 
-        var enable:Boolean = false
-        //functions click
-        pointForMy.setOnClickListener {
-            match.point(player1, player2)
-            enable = true
+    fun pointForRival(view: View) {
+        match.point(player2, player1)
+        translateAndShow()
+        println("caca2")
+    }
+
+    private fun translateAndShow() {
+        when(player1.point) {
+            0 -> binding.myPoint.text ="0"
+            1 -> binding.myPoint.text ="15"
+            2 -> binding.myPoint.text ="30"
+            3 -> binding.myPoint.text ="40"
+            4 -> binding.myPoint.text ="AD"
         }
-
-        pointForRival.setOnClickListener {
-            match.point(player2, player1)
-            enable = true
+        when(player2.point) {
+            0 -> binding.rivalPoint.text ="0"
+            1 -> binding.rivalPoint.text ="15"
+            2 -> binding.rivalPoint.text ="30"
+            3 -> binding.rivalPoint.text ="40"
+            4 -> binding.rivalPoint.text ="AD"
         }
-
-
-        if (enable) {
-            when(player1.point) {
-                0 -> textPoint.text ="0"
-                1 -> textPoint.text ="15"
-                2 -> textPoint.text ="30"
-                3 -> textPoint.text ="40"
-                4 -> textPoint.text ="AD"
-            }
-            when(player2.point) {
-                0 -> textRivalPoint.text ="0"
-                1 -> textRivalPoint.text ="15"
-                2 -> textRivalPoint.text ="30"
-                3 -> textRivalPoint.text ="40"
-                4 -> textRivalPoint.text ="AD"
-            }
-            textSetPoint.setText(player1.setPoint)
-            textRivalSetPoint.setText(player2.setPoint)
-            textMyGame.setText(player1.game)
-            textRivalGame.setText(player2.game)
-            enable = false
-        }
-
+        binding.mySet.text = player1.setPoint.toString()
+        binding.rivalSet.text = player2.setPoint.toString()
+        binding.myGame.text = player1.game.toString()
+        binding.rivalGame.text = player2.game.toString()
     }
 }
