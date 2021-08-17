@@ -11,13 +11,17 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#002851"
         android:padding="@dimen/inner_frame_layout_padding"
         app:layout_boxedEdges="all">
 
+
         <LinearLayout
+            android:id="@+id/mainLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="visible">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -29,16 +33,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@drawable/custom_testview"
                     android:gravity="center"
-                    android:text="0" />
+                    android:text="0"
+                    android:textColor="#002851" />
 
                 <TextView
                     android:id="@+id/rivalGame"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@drawable/custom_testview"
                     android:gravity="center"
-                    android:text="0" />
+                    android:text="0"
+                    android:textColor="#002851" />
             </LinearLayout>
 
             <LinearLayout
@@ -51,16 +59,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@drawable/custom_testview"
                     android:gravity="center"
-                    android:text="0" />
+                    android:text="0"
+                    android:textColor="#002851" />
 
                 <TextView
                     android:id="@+id/rivalSet"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@drawable/custom_testview"
                     android:gravity="center"
-                    android:text="0" />
+                    android:text="0"
+                    android:textColor="#002851" />
             </LinearLayout>
 
             <LinearLayout
@@ -73,41 +85,78 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@drawable/custom_testview"
                     android:gravity="center"
-                    android:text="0" />
+                    android:text="0"
+                    android:textColor="#002851" />
 
                 <TextView
                     android:id="@+id/rivalPoint"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@drawable/custom_testview"
                     android:gravity="center"
-                    android:text="0" />
+                    android:text="0"
+                    android:textColor="#002851" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="#002851"
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/me"
+                    android:id="@+id/me2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:backgroundTint="#00986d"
                     android:gravity="center"
-                    android:text="Button"
-                    android:onClick="pointForMe"/>
+                    android:onClick="pointForMe"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <Button
-                    android:id="@+id/rival"
+                    android:id="@+id/rival2"
                     android:layout_width="wrap_content"
-                    android:layout_height="74dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:backgroundTint="#d8225b"
                     android:gravity="center"
-                    android:text="Button"
-                    android:onClick="pointForRival"/>
+                    android:onClick="pointForRival"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tieBreakLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/meTieBreak"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
+                android:onClick="pointForMe"
+                android:text="0"
+                android:textColor="#002851"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/rivalTieBreak"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
+                android:onClick="pointForRival"
+                android:text="0"
+                android:textColor="#002851"
+                android:textSize="48sp" />
         </LinearLayout>
     </FrameLayout>
 </androidx.wear.widget.BoxInsetLayout>

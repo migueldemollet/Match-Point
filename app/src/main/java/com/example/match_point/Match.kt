@@ -1,13 +1,17 @@
 package com.example.match_point
 
-import com.example.match_point.Player
 
-class Match {
+class Match() {
+    var isTieBreak = false
+    var state = 0
 
-    fun point(playerWin: Player, playerLost: Player) {
+    fun point(playerWin: Player, playerLost: Player) : Int {
         playerWin.addPoint()
 
-        if (playerWin.point == 4 && playerWin.point - 1 > playerLost.point) {
+        if (isTieBreak) {
+          tieBreak(playerWin, playerLost)
+
+        } else if (playerWin.point == 4 && playerWin.point - 1 > playerLost.point) {
             set(playerWin, playerLost)
 
         } else if (playerWin.point == 4 && playerLost.point == 4) {
@@ -18,6 +22,10 @@ class Match {
             set(playerWin, playerLost)
         }
 
+        if (playerWin.game == 2) {
+            state = 2
+        }
+        return state
     }
 
     private fun set(playerWin: Player, playerLost: Player): Unit {
@@ -27,7 +35,10 @@ class Match {
             game(playerWin, playerLost)
 
         } else if (playerWin.setPoint == 6 && playerLost.setPoint == 6) {
-        // breakpoint
+            state = 1
+            isTieBreak = true
+            tieBreak(playerWin, playerLost)
+
         }
 
     }
@@ -35,10 +46,19 @@ class Match {
     private fun game(playerWin: Player, playerLost: Player): Unit {
         playerWin.addGame(playerLost)
 
-        if (playerWin.game == 2 && playerLost.game == 1) {
-            // win
-        } else if (playerWin.game == 1 && playerLost.game == 1) {
-            //breakpoint
+        if (playerWin.game == 1 && playerLost.game == 1) {
+            state = 1
+            isTieBreak = true
+            tieBreak(playerWin, playerLost)
+        }
+    }
+
+    private fun tieBreak(playerWin: Player, playerLost: Player): Unit {
+
+        if (playerWin.point >= 7 && playerWin.point - 2 >= playerLost.point) {
+            game(playerWin, playerLost)
+            isTieBreak = false
+            state = 0
         }
     }
 }

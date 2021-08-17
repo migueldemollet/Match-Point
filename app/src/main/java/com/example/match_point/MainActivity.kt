@@ -1,11 +1,10 @@
 package com.example.match_point
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.TextView
-import android.widget.Toast
+import androidx.core.view.isGone
 import com.example.match_point.databinding.ActivityMainBinding
 
 class MainActivity : Activity() {
@@ -21,21 +20,32 @@ class MainActivity : Activity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
     }
 
     fun pointForMe(view: View) {
-        match.point(player1, player2)
-        translateAndShow()
-        println("caca")
+
+        when(match.point(player1, player2)) {
+            0 -> translateAndShow()
+            1 -> showBreak()
+            2 -> finishGame()
+        }
     }
 
     fun pointForRival(view: View) {
-        match.point(player2, player1)
-        translateAndShow()
-        println("caca2")
+
+        when(match.point(player2, player1)) {
+            0 -> translateAndShow()
+            1 -> showBreak()
+            2 -> finishGame()
+        }
+
     }
 
     private fun translateAndShow() {
+        binding.mainLayout.isGone = false
+        binding.tieBreakLayout.isGone = true
+
         when(player1.point) {
             0 -> binding.myPoint.text ="0"
             1 -> binding.myPoint.text ="15"
@@ -54,5 +64,19 @@ class MainActivity : Activity() {
         binding.rivalSet.text = player2.setPoint.toString()
         binding.myGame.text = player1.game.toString()
         binding.rivalGame.text = player2.game.toString()
+
     }
+
+    private fun showBreak() {
+        binding.mainLayout.isGone = true
+        binding.tieBreakLayout.isGone = false
+
+        binding.meTieBreak.text = player1.point.toString()
+        binding.rivalTieBreak.text = player2.point.toString()
+    }
+
+    private fun finishGame() {
+        finish()
+    }
+
 }

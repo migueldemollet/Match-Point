@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_main.xml" value="1.2516447368421053" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_button.xml" value="0.8" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_rival_button.xml" value="1.7571428571428571" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_testview.xml" value="1.7285714285714286" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_main.xml" value="1.15625" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_main2.xml" value="0.7483552631578947" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/tie_break.xml" value="0.7417763157894737" />
         <entry key="..\:/Users/Miguel/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_main.xml" value="0.176" />
       </map>
     </option>
@@ -13,5 +18,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="1.8345864661654134" />
+      </ProjectState>
+    </option>
   </component>
 </project>
