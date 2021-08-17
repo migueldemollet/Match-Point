@@ -34,10 +34,8 @@ class Match() {
         if (playerWin.setPoint == 6 && playerWin.setPoint - 2 >= playerLost.setPoint) {
             game(playerWin, playerLost)
 
-        } else if (playerWin.setPoint == 6 && playerLost.setPoint == 6) {
-            state = 1
-            isTieBreak = true
-            tieBreak(playerWin, playerLost)
+        } else if (playerWin.setPoint == 7 && playerLost.setPoint == 6) {
+            game(playerWin, playerLost)
 
         }
 

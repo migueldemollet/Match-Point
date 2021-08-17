@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.core.view.isGone
 import com.example.match_point.databinding.ActivityMainBinding
 
@@ -76,6 +77,11 @@ class MainActivity : Activity() {
     }
 
     private fun finishGame() {
+        if (player1.game == 2) {
+            Toast.makeText(this, R.string.end_game_victory, Toast.LENGTH_SHORT).show()
+        } else
+            Toast.makeText(this, R.string.end_game_faild, Toast.LENGTH_SHORT).show()
+        
         finish()
     }
 

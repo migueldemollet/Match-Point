@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Match_point</string>
+    <string name="end_game_victory">Victoria</string>
+    <string name="end_game_faild">Derrota</string>
+</resources>

@@ -1,3 +1,4 @@
 <resources>
-    <string name="hello_world">Hello Round World!</string>
+    <string name="end_game_victory">Victory</string>
+    <string name="end_game_faild">Defeat</string>
 </resources>
