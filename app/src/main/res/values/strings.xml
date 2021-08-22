@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Match_point</string>
+    <string name="app_name" translatable="false">Match Point</string>
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.
@@ -8,11 +8,26 @@
     <string name="end_game_faild">Defeat</string>
 
     <!-- Text button from settings -->
-    <string name="button_Info"> Match info</string>
-    <string name="button_Theme"> Theme</string>
-    <string name="button_Help"> Help</string>
-    <string name="button_About"> About</string>
-    <string name="button_Exit"> Exit</string>
+    <string name="button_Info">Match info</string>
+    <string name="button_Theme">Theme</string>
+    <string name="button_Help">Help</string>
+    <string name="button_About">About</string>
+    <string name="button_Exit">Exit</string>
+
+    <!-- Text info match -->
+    <string name="text_win">Winning = </string>
+    <string name="text_service">Service = </string>
+    <string name="text_service_side">Service side = </string>
+    <string name="text_time_played">Time played = </string>
+    <string name="text_you">You</string>
+    <string name="text_rival">Rival</string>
+    <string name="text_equal">Equal</string>
+    <string name="text_left">Left</string>
+    <string name="text_right">Right</string>
+    <string name="text_win_3_games">Best 3 games win</string>
+    <string name="text_win_5_games">Best 5 games win</string>
+    <string name="text_point_wins">Points wins = </string>
+    <string name="text_point_lost">Point lost = </string>
 
     <!-- Preference Titles -->
     <string name="messages_header" translatable="false">Messages</string>

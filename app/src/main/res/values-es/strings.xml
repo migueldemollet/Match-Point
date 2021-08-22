@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Match_point</string>
+    <string name="app_name">Match Point</string>
     <string name="end_game_victory">Victoria</string>
     <string name="end_game_faild">Derrota</string>
     <string name="button_Info">Sobre el partido</string>
@@ -8,4 +8,17 @@
     <string name="button_Help">Ayuda</string>
     <string name="button_About">Sobre la aplicacion</string>
     <string name="button_Exit">Salir</string>
+    <string name="text_win">"Ganador = "</string>
+    <string name="text_service">"Servicio = "</string>
+    <string name="text_service_side">"Lado de servicio = "</string>
+    <string name="text_time_played">"Tiempo Jugado = "</string>
+    <string name="text_you">Tu</string>
+    <string name="text_rival">Rival</string>
+    <string name="text_left">Izquierda</string>
+    <string name="text_right">Derecha</string>
+    <string name="text_win_3_games">Gana al mejor de 3 jeugos</string>
+    <string name="text_win_5_games">Gana al mejor de 5 juegos</string>
+    <string name="text_point_wins">"Puntos ganados = "</string>
+    <string name="text_point_lost">"Puntos perdidos = "</string>
+    <string name="text_equal">Iguales</string>
 </resources>

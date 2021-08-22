@@ -13,7 +13,9 @@ class MainActivity : Activity() {
 
     var player1 = Player(0,0,0)
     var player2 = Player(0,0,0)
-    var match = Match()
+    var match = Match(0)
+    var intArray = IntArray(3)
+    var tStart = System.currentTimeMillis()
 
     private lateinit var binding: ActivityMainBinding
 
@@ -23,12 +25,11 @@ class MainActivity : Activity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
     }
 
     fun pointForMe(view: View) {
-
-        when(match.point(player1, player2)) {
+        intArray = match.point(player1, player2)
+        when(intArray[0]) {
             0 -> translateAndShow()
             1 -> showBreak()
             2 -> finishGame()
@@ -36,8 +37,8 @@ class MainActivity : Activity() {
     }
 
     fun pointForRival(view: View) {
-
-        when(match.point(player2, player1)) {
+        intArray = match.point(player2, player1)
+        when(intArray[0]) {
             0 -> translateAndShow()
             1 -> showBreak()
             2 -> finishGame()
@@ -46,7 +47,16 @@ class MainActivity : Activity() {
     }
 
     fun settingClick(view: View) {
+        var time = System.currentTimeMillis()
+        time = (time - tStart)/60000
+
         val intent = Intent(this, SettingActivity::class.java)
+        intent.putExtra("side", intArray[1].toString())
+        intent.putExtra("timePlayed", time.toString())
+        intent.putExtra("service", intArray[2].toString())
+        intent.putExtra("player", player1)
+        intent.putExtra("player2", player2)
+
         startActivity(intent)
     }
 
