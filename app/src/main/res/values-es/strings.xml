@@ -3,4 +3,9 @@
     <string name="app_name">Match_point</string>
     <string name="end_game_victory">Victoria</string>
     <string name="end_game_faild">Derrota</string>
+    <string name="button_Info">Sobre el partido</string>
+    <string name="button_Theme">Tema</string>
+    <string name="button_Help">Ayuda</string>
+    <string name="button_About">Sobre la aplicacion</string>
+    <string name="button_Exit">Salir</string>
 </resources>

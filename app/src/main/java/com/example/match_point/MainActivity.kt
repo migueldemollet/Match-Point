@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.core.view.isGone
 import com.example.match_point.databinding.ActivityMainBinding
 
+
 class MainActivity : Activity() {
 
     var player1 = Player(0,0,0)
@@ -21,6 +22,7 @@ class MainActivity : Activity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
     }
 
@@ -41,6 +43,11 @@ class MainActivity : Activity() {
             2 -> finishGame()
         }
 
+    }
+
+    fun settingClick(view: View) {
+        val intent = Intent(this, SettingActivity::class.java)
+        startActivity(intent)
     }
 
     private fun translateAndShow() {
