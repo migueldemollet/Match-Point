@@ -63,6 +63,7 @@ class MainActivity : Activity() {
     private fun translateAndShow() {
         binding.mainLayout.isGone = false
         binding.tieBreakLayout.isGone = true
+        binding.settingButton!!.isGone = false
 
         when(player1.point) {
             0 -> binding.myPoint.text ="0"
@@ -88,6 +89,7 @@ class MainActivity : Activity() {
     private fun showBreak() {
         binding.mainLayout.isGone = true
         binding.tieBreakLayout.isGone = false
+        binding.settingButton!!.isGone = true
 
         binding.meTieBreak.text = player1.point.toString()
         binding.rivalTieBreak.text = player2.point.toString()

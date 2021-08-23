@@ -4,10 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#002851"
     android:padding="0dp"
     tools:context=".MainActivity"
     tools:deviceIds="wear">
+
+    <Button
+        android:id="@+id/settingButton"
+        android:layout_width="132dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="39dp"
+        android:background="#00ff"
+        android:onClick="settingClick"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
         android:id="@+id/mainLayout"
@@ -43,8 +56,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/custom_textview_round_left_up"
                     android:gravity="center"
-                    android:text="0"
-                    android:textColor="#002851" />
+                    android:text="0" />
 
                 <TextView
                     android:id="@+id/rivalGame"
@@ -67,20 +79,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/custom_testview"
                     android:gravity="center"
-                    android:text="0"
-                    android:textColor="#002851" />
+                    android:text="0" />
 
                 <TextView
                     android:id="@+id/rivalSet"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/custom_testview"
                     android:gravity="center"
-                    android:text="0"
-                    android:textColor="#002851" />
+                    android:text="0" />
             </LinearLayout>
 
             <LinearLayout
@@ -121,10 +129,10 @@
 
             <Button
                 android:id="@+id/me2"
+                style="@style/Widget.Padel_theme.button_me"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="#00986d"
                 android:gravity="center"
                 android:onClick="pointForMe"
                 android:rotation="360"
@@ -132,10 +140,10 @@
 
             <Button
                 android:id="@+id/rival2"
+                style="@style/Widget.Padel_theme.button_rival"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="#d8225b"
                 android:gravity="center"
                 android:onClick="pointForRival"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -151,24 +159,22 @@
 
         <Button
             android:id="@+id/meTieBreak"
+            style="@style/Widget.Padel_theme.button_tie_break"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#ffffff"
             android:onClick="pointForMe"
             android:text="0"
-            android:textColor="#002851"
             android:textSize="48sp" />
 
         <Button
             android:id="@+id/rivalTieBreak"
+            style="@style/Widget.Padel_theme.button_tie_break"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#ffffff"
             android:onClick="pointForRival"
             android:text="0"
-            android:textColor="#002851"
             android:textSize="48sp" />
     </LinearLayout>
 

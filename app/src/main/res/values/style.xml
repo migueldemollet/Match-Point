@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Padel_theme" parent="Theme.AppCompat">
+        <item name="android:background">@color/ColorBackgraundPadel</item>
+        <item name="android:textViewStyle">@style/Widget.Padel_theme.TextView</item>
+    </style>
+
+    <style name="Widget.Padel_theme.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:background">@color/ColorBackgraundMarkerPadel</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/ColorBackgraundPadel</item>
+    </style>
+
+    <style name="Widget.Padel_theme.button_me" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/ColorButtonMePadel</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="Widget.Padel_theme.button_rival" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/ColorButton_RivalPdel</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="Widget.Padel_theme.button_tie_break" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/ColorBackgraundPadel</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="dark" parent="Theme.AppCompat">
+        <item name="android:background">@color/ColorDark</item>
+    </style>
+
+    <style name="light" parent="Theme.AppCompat">
+        <item name="android:background">@color/white</item>
+        <item name="android:textViewStyle">@style/Widget.light.TextView</item>
+    </style>
+
+    <style name="Widget.light.Button" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/ColorDark</item>
+        <item name="android:background">@color/ColorBackgroundLightButton</item>
+        <item name="android:padding">5dp</item>
+
+    </style>
+
+    <style name="Widget.light.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/ColorDark</item>
+    </style>
+
+
+</resources>

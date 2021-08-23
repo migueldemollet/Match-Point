@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorBackgraundPadel">#002851</color>
+    <color name="ColorBackgraundMarkerPadel">#01DFDF</color>
+    <color name="ColorButtonMePadel">#00986d</color>
+    <color name="ColorButton_RivalPdel">#d8225b</color>
+    <color name="ColorDark">#303030</color>
+    <color name="ColorBackgroundLightButton">#D9D9D9</color>
+    <color name="ColorButtonDark">#5a595b</color>
+</resources>

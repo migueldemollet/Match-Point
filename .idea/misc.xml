@@ -6,24 +6,31 @@
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable-round/custom_buttonplayer1.xml" value="1.0" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_button.xml" value="0.8" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_button_rectangle_left.xml" value="1.00625" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_button_round_setting.xml" value="0.978125" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_buttonplayer1.xml" value="1.0375" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_rival_button.xml" value="1.7571428571428571" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_testview.xml" value="0.8" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_textview_round_left_botton.xml" value="1.00625" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_textview_round_left_up.xml" value="0.978125" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_textview_round_right_botton.xml" value="1.00625" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_textviewleftbotton.xml" value="1.00625" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_textviewroundleftup.xml" value="1.0375" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_textviewroundrightbotton.xml" value="1.00625" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_textviewroundrightup.xml" value="1.00625" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/test.xml" value="1.015625" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout-round/activity_about.xml" value="0.6550335570469799" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout-round/activity_help.xml" value="0.86328125" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout-round/activity_info.xml" value="0.5286458333333334" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout-round/activity_main.xml" value="0.8" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout-round/activity_setting.xml" value="0.5286458333333334" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_about.xml" value="0.6686046511627907" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_help.xml" value="1.0421511627906976" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_info.xml" value="1.0" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_main.xml" value="0.850328947368421" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_main2.xml" value="0.7483552631578947" />
-        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_setting.xml" value="0.5683139534883721" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_setting.xml" value="0.8" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_setting2.xml" value="0.5683139534883721" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_setting_round.xml" value="0.5901162790697675" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_settings.xml" value="0.5973837209302325" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_theme.xml" value="1.0421511627906976" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/fragment_screen_slide_page.xml" value="0.5973837209302325" />
