@@ -21,4 +21,11 @@
     <string name="text_point_wins">"Puntos ganados = "</string>
     <string name="text_point_lost">"Puntos perdidos = "</string>
     <string name="text_equal">Iguales</string>
+    <string name="text_version">"Versión "</string>
+    <string name="text_resum">Este es un programa diseñado para el uso deportivo para tener un control de la puntuacion y estadisticas del partido y asi evitar que el rival haga trampas.</string>
+    <string name="text_license">Este programa esta bajo la licencia MIT si quieres consultar dicha licencia acceda al siguiente link.</string>
+    <string name="text_notify_bug">Si quiere notificar algun bug para ayudar a mejor el progrma porfavor envie un correo a migueldemollet10@gmail.com</string>
+    <string name="text_report">Si quiere notificar algun bug para ayudar a mejor el progrma porfavor envie un correo a migueldemollet10@gmail.com</string>
+    <string name="text_source_code">Si desea acceder al codigo fuente del programa acceda al siguiente link. https://github.com/migueldemollet/Match-Point</string>
+    <string name="text_creator">Creado por Miguel del Arco.</string>
 </resources>
