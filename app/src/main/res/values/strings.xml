@@ -9,6 +9,9 @@
 
     <!-- Text button from settings -->
     <string name="button_Info">Match info</string>
+    <string name="button_new_macth">New Match</string>
+    <string name="button_back_macth">Back to Match</string>
+    <string name="button_Statics">Statics</string>
     <string name="button_Theme">Theme</string>
     <string name="button_Help">Help</string>
     <string name="button_About">About</string>
@@ -36,6 +39,9 @@
     <string name="text_report">If you want to report any bug to help improve the program please send an email to migueldemollet10@gmail.com</string>
     <string name="text_source_code">If you want to access the source code of the program, access the following link. https://github.com/migueldemollet/Match-Point</string>
     <string name="text_creator">Created by Miguel del Arco.</string>
+
+    <!-- Text Theme -->
+    <style name="textThemeChanged">Theme changed successfully</style>
 
     <!-- Preference Titles -->
     <string name="messages_header" translatable="false">Messages</string>

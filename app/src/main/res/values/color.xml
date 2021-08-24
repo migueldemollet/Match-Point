@@ -6,5 +6,6 @@
     <color name="ColorButton_RivalPdel">#d8225b</color>
     <color name="ColorDark">#303030</color>
     <color name="ColorBackgroundLightButton">#D9D9D9</color>
+    <color name="ColorBackgraundTextViewPointPadel">#fefefe</color>
     <color name="ColorButtonDark">#5a595b</color>
 </resources>

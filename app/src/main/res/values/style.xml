@@ -6,7 +6,13 @@
     </style>
 
     <style name="Widget.Padel_theme.TextView" parent="Widget.AppCompat.TextView">
-        <item name="android:background">@color/ColorBackgraundMarkerPadel</item>
+        <item name="android:background">@drawable/custom_textview</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/ColorBackgraundMarkerPadel</item>
+    </style>
+
+    <style name="Widget.Padel_theme.TextView_point" parent="Widget.AppCompat.TextView">
+        <item name="android:background">@drawable/custom_textview_point</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/ColorBackgraundPadel</item>
     </style>

@@ -45,6 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@drawable/custom_textview"
                 android:text="0" />
 
             <TextView
@@ -83,6 +84,7 @@
 
             <TextView
                 android:id="@+id/myPoint"
+                style="@style/Widget.Padel_theme.TextView_point"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -90,6 +92,7 @@
 
             <TextView
                 android:id="@+id/rivalPoint"
+                style="@style/Widget.Padel_theme.TextView_point"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

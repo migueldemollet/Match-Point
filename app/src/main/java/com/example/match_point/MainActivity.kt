@@ -24,7 +24,7 @@ class MainActivity : Activity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        runMatch = true
     }
 
     fun pointForMe(view: View) {
@@ -100,7 +100,7 @@ class MainActivity : Activity() {
             Toast.makeText(this, R.string.end_game_victory, Toast.LENGTH_SHORT).show()
         } else
             Toast.makeText(this, R.string.end_game_faild, Toast.LENGTH_SHORT).show()
-        
+        runMatch = false
         finish()
     }
 

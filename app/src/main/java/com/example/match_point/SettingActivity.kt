@@ -4,11 +4,14 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.isGone
 import com.example.match_point.databinding.ActivitySettingBinding
 import com.example.match_point.setting_option.AboutActivity
 import com.example.match_point.setting_option.HelpActivity
 import com.example.match_point.setting_option.InfoActivity
 import com.example.match_point.setting_option.ThemeActivity
+
+var runMatch: Boolean = false
 
 class SettingActivity: Activity() {
 
@@ -20,6 +23,15 @@ class SettingActivity: Activity() {
         binding = ActivitySettingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        if (runMatch) {
+            binding.BtnNewMatch!!.isGone = true
+            binding.BtnBackMatch!!.isGone = false
+            binding.BtnInfo!!.isGone = false
+        } else {
+            binding.BtnInfo!!.isGone = true
+            binding.BtnBackMatch!!.isGone = true
+            binding.BtnNewMatch!!.isGone = false
+        }
     }
 
     fun infoClick(view: View) {
@@ -52,4 +64,15 @@ class SettingActivity: Activity() {
     fun exitClick(view: View) {
         System.exit(0)
     }
+
+    fun newMatchClick(view: View) {
+        val intent = Intent(this, OptionMatchActivity::class.java)
+        startActivity(intent)
+    }
+    fun staticsClick(view: View) {
+        val intent = Intent(this, StaticActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun backMatchClick(view: View) {}
 }
