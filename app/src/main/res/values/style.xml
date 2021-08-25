@@ -17,6 +17,10 @@
         <item name="android:textColor">@color/ColorBackgraundPadel</item>
     </style>
 
+    <style name="Widget.Padel_theme.TextView_point.goldPoint">
+        <item name="android:background">@drawable/custom_gold_point</item>
+    </style>
+
     <style name="Widget.Padel_theme.button_me" parent="Widget.AppCompat.Button">
         <item name="android:background">@color/ColorButtonMePadel</item>
         <item name="android:layout_margin">5dp</item>
@@ -34,11 +38,11 @@
         <item name="android:layout_margin">5dp</item>
     </style>
 
-    <style name="dark" parent="Theme.AppCompat">
+    <style name="dark" parent="Theme.AppCompat.NoActionBar">
         <item name="android:background">@color/ColorDark</item>
     </style>
 
-    <style name="light" parent="Theme.AppCompat">
+    <style name="light" parent="Theme.AppCompat.NoActionBar">
         <item name="android:background">@color/white</item>
         <item name="android:textViewStyle">@style/Widget.light.TextView</item>
     </style>

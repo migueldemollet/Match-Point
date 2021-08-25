@@ -30,4 +30,8 @@
     <string name="button_new_macth">Nuevo Partido</string>
     <string name="button_back_macth">Volver al partido</string>
     <string name="button_Statics">Estadistica</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_start">Empezar</string>
+    <string name="text_gold_point">Punto de oro</string>
+    <string name="text_best_games">Gana el mejor a 3 o 5 juegos?</string>
 </resources>

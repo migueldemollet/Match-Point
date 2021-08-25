@@ -42,6 +42,7 @@ class SettingActivity: Activity() {
         intent2.putExtra("service", intent.getStringExtra("service"))
         intent2.putExtra("player", intent.getSerializableExtra("player"))
         intent2.putExtra("player2", intent.getSerializableExtra("player2"))
+        intent2.putExtra("games", intent.getStringExtra("games"))
 
         startActivity(intent2)
     }
@@ -74,5 +75,7 @@ class SettingActivity: Activity() {
         startActivity(intent)
     }
 
-    fun backMatchClick(view: View) {}
+    fun backMatchClick(view: View) {
+        onBackPressed()
+    }
 }

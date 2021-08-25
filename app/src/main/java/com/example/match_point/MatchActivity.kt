@@ -6,26 +6,42 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.core.view.isGone
-import com.example.match_point.databinding.ActivityMainBinding
+import com.example.match_point.databinding.ActivityMatchBinding
+import kotlin.properties.Delegates
 
 
-class MainActivity : Activity() {
+class MatchActivity : Activity() {
 
-    var player1 = Player(0,0,0)
-    var player2 = Player(0,0,0)
-    var match = Match(0)
-    var intArray = IntArray(3)
-    var tStart = System.currentTimeMillis()
+    private var tStart = System.currentTimeMillis()
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var player1 : Player
+    private lateinit var player2 : Player
+    private lateinit var intArray : IntArray
+    private lateinit var match: Match
+    private lateinit var binding: ActivityMatchBinding
+    private var goldPoint by Delegates.notNull<Boolean>()
+    private var game by Delegates.notNull<Int>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMatchBinding.inflate(layoutInflater)
         setContentView(binding.root)
         runMatch = true
+
+        player1 = Player(0,5,1)
+        player2 = Player(0,0,0)
+
+        goldPoint = intent.getBooleanExtra("goldPoint", false)
+        game = intent.getIntExtra("games",3)
+        var service = intent.getIntExtra("service",0)
+        match = Match(service, game, goldPoint)
+
+        intArray = intArrayOf(0,0,service)
+
     }
+
+    override fun onBackPressed() {}
 
     fun pointForMe(view: View) {
         intArray = match.point(player1, player2)
@@ -56,6 +72,7 @@ class MainActivity : Activity() {
         intent.putExtra("service", intArray[2].toString())
         intent.putExtra("player", player1)
         intent.putExtra("player2", player2)
+        intent.putExtra("games", game.toString())
 
         startActivity(intent)
     }
@@ -79,6 +96,7 @@ class MainActivity : Activity() {
             3 -> binding.rivalPoint.text ="40"
             4 -> binding.rivalPoint.text ="AD"
         }
+
         binding.mySet.text = player1.setPoint.toString()
         binding.rivalSet.text = player2.setPoint.toString()
         binding.myGame.text = player1.game.toString()
@@ -96,12 +114,15 @@ class MainActivity : Activity() {
     }
 
     private fun finishGame() {
+        //cambiar dependiendo de los juegos
         if (player1.game == 2) {
             Toast.makeText(this, R.string.end_game_victory, Toast.LENGTH_SHORT).show()
         } else
             Toast.makeText(this, R.string.end_game_faild, Toast.LENGTH_SHORT).show()
         runMatch = false
         finish()
+        var intent = Intent(this, SettingActivity::class.java)
+        startActivity(intent)
     }
 
 }

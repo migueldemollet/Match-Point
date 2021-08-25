@@ -1,13 +1,16 @@
 package com.example.match_point
 
 
-class Match(service: Int) {
+class Match(service: Int, games: Int, goldPoint: Boolean) {
     var isTieBreak = false
     var state = 0
     var side = 0
     var service = service
+    var games = games
+    var goldPoint = goldPoint
 
     fun point(playerWin: Player, playerLost: Player) : IntArray {
+
         playerWin.addPoint()
         playerLost.addPointLost()
         changeSide()
@@ -29,11 +32,26 @@ class Match(service: Int) {
             set(playerWin, playerLost)
             side = 0
             changeService()
+
+        } else if (goldPoint && playerWin.point == 4 && playerLost.point == 3) {
+            set(playerWin, playerLost)
+            side = 0
+            changeService()
         }
 
-        if (playerWin.game == 2) {
-            state = 2
+        when(games) {
+            3 -> {
+                if (playerWin.game == 2) {
+                    state = 2
+                }
+            }
+            5 -> {
+                if (playerWin.game == 3) {
+                    state = 2
+                }
+            }
         }
+
         return intArrayOf(state, side, service)
     }
 
@@ -52,11 +70,21 @@ class Match(service: Int) {
 
     private fun game(playerWin: Player, playerLost: Player): Unit {
         playerWin.addGame(playerLost)
-
-        if (playerWin.game == 1 && playerLost.game == 1) {
-            state = 1
-            isTieBreak = true
-            tieBreak(playerWin, playerLost)
+        when(games) {
+            3-> {
+                if (playerWin.game == 1 && playerLost.game == 1) {
+                    state = 1
+                    isTieBreak = true
+                    tieBreak(playerWin, playerLost)
+                }
+            }
+            5 -> {
+                if (playerWin.game == 2 && playerLost.game == 2) {
+                    state = 1
+                    isTieBreak = true
+                    tieBreak(playerWin, playerLost)
+                }
+            }
         }
     }
 

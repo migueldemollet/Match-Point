@@ -17,6 +17,13 @@
     <string name="button_About">About</string>
     <string name="button_Exit">Exit</string>
 
+    <!-- Text new match -->
+    <string name="text_best_games">Does the best win over 3 or 5 games?</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_start">Start</string>
+    <string name="text_gold_point">Gold point</string>
+
+
     <!-- Text info match -->
     <string name="text_win">Winning = </string>
     <string name="text_service">Service = </string>

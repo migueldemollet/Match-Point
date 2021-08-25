@@ -11,6 +11,7 @@
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_button_theme_1.xml" value="0.96875" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_button_theme_2.xml" value="0.96875" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_buttonplayer1.xml" value="1.0375" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_gold_point.xml" value="0.921875" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_rival_button.xml" value="1.7571428571428571" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_testview.xml" value="0.8" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/drawable/custom_textview.xml" value="0.8611111111111112" />
@@ -33,6 +34,7 @@
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_info.xml" value="1.0" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_main.xml" value="0.850328947368421" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_main2.xml" value="0.7483552631578947" />
+        <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_match.xml" value="0.5159883720930233" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_option_match.xml" value="0.7632850241545893" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_setting.xml" value="0.8" />
         <entry key="..\:/Mis Documentos/AndroidStudioProjects/Match_point/app/src/main/res/layout/activity_setting2.xml" value="0.5683139534883721" />

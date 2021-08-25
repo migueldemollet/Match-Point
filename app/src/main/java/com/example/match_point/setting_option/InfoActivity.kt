@@ -39,6 +39,11 @@ class InfoActivity : Activity() {
             binding.resultTextWinning.setText(R.string.text_rival)
         }
 
+        when(intent.getStringExtra("games")) {
+            "3"-> binding.textgamesToWin.setText(R.string.text_win_3_games)
+            "5" -> binding.textgamesToWin.setText(R.string.text_win_5_games)
+        }
+
         when(intent.getStringExtra("service")) {
             "0" -> binding.resultTextService.setText(R.string.text_you)
             "1" -> binding.resultTextService.setText(R.string.text_rival)
