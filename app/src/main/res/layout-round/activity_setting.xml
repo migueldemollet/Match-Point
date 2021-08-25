@@ -17,6 +17,20 @@
         android:paddingVertical="20dp">
 
         <Button
+            android:id="@+id/BtnNewMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="newMatchClick"
+            android:text="@string/button_new_macth" />
+
+        <Button
+            android:id="@+id/BtnBackMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="backMatchClick"
+            android:text="@string/button_back_macth" />
+
+        <Button
             android:id="@+id/BtnInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,11 +38,20 @@
             android:text="@string/button_Info" />
 
         <Button
+            android:id="@+id/BtnStatistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="staticsClick"
+            android:text="@string/button_Statics"
+            android:visibility="gone" />
+
+        <Button
             android:id="@+id/BtnTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="themeClick"
-            android:text="@string/button_Theme" />
+            android:text="@string/button_Theme"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/BtnHelp"

@@ -16,12 +16,14 @@
     <string name="button_Help">Help</string>
     <string name="button_About">About</string>
     <string name="button_Exit">Exit</string>
+    <string name="button_cancel_match">Cancel Match</string>
 
     <!-- Text new match -->
     <string name="text_best_games">Does the best win over 3 or 5 games?</string>
     <string name="button_cancel">Cancel</string>
     <string name="button_start">Start</string>
     <string name="text_gold_point">Gold point</string>
+    <string name="text_who_start">Who starts serving?</string>
 
 
     <!-- Text info match -->

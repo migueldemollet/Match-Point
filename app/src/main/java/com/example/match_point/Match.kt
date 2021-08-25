@@ -2,12 +2,12 @@ package com.example.match_point
 
 
 class Match(service: Int, games: Int, goldPoint: Boolean) {
-    var isTieBreak = false
-    var state = 0
-    var side = 0
-    var service = service
-    var games = games
-    var goldPoint = goldPoint
+    private var isTieBreak = false
+    private var state = 0
+    private var side = 0
+    private var service = service
+    private val games = games
+    private val goldPoint = goldPoint
 
     fun point(playerWin: Player, playerLost: Player) : IntArray {
 

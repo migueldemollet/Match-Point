@@ -23,14 +23,21 @@ class SettingActivity: Activity() {
         binding = ActivitySettingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        changeView()
+
+    }
+
+    private fun changeView() : Unit {
         if (runMatch) {
             binding.BtnNewMatch!!.isGone = true
             binding.BtnBackMatch!!.isGone = false
             binding.BtnInfo!!.isGone = false
+            binding.BtnExit.setText(R.string.button_cancel_match)
         } else {
             binding.BtnInfo!!.isGone = true
             binding.BtnBackMatch!!.isGone = true
             binding.BtnNewMatch!!.isGone = false
+            binding.BtnExit.setText(R.string.button_Exit)
         }
     }
 
@@ -48,31 +55,32 @@ class SettingActivity: Activity() {
     }
 
     fun themeClick(view: View) {
-        val intent = Intent(this, ThemeActivity::class.java)
-        startActivity(intent)
+        startActivity(Intent(this, ThemeActivity::class.java))
     }
 
     fun helpClick(view: View) {
-        val intent = Intent(this, HelpActivity::class.java)
-        startActivity(intent)
+        startActivity(Intent(this, HelpActivity::class.java))
     }
 
     fun aboutClick(view: View) {
-        val intent = Intent(this, AboutActivity::class.java)
-        startActivity(intent)
+        startActivity(Intent(this, AboutActivity::class.java))
     }
 
     fun exitClick(view: View) {
-        System.exit(0)
+        if (runMatch) {
+            runMatch = false
+            recreate()
+        } else {
+            System.exit(0)
+        }
+
     }
 
     fun newMatchClick(view: View) {
-        val intent = Intent(this, OptionMatchActivity::class.java)
-        startActivity(intent)
+        startActivity(Intent(this, OptionMatchActivity::class.java))
     }
     fun staticsClick(view: View) {
-        val intent = Intent(this, StaticActivity::class.java)
-        startActivity(intent)
+        startActivity(Intent(this, StaticActivity::class.java))
     }
 
     fun backMatchClick(view: View) {

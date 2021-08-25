@@ -34,4 +34,6 @@
     <string name="button_start">Empezar</string>
     <string name="text_gold_point">Punto de oro</string>
     <string name="text_best_games">Gana el mejor a 3 o 5 juegos?</string>
+    <string name="button_cancel_match">Cancelar Partido</string>
+    <string name="text_who_start">Quien empieza sacando?</string>
 </resources>

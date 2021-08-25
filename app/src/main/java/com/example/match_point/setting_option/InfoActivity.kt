@@ -15,29 +15,16 @@ class InfoActivity : Activity() {
         binding = ActivityInfoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var player: Player = intent.getSerializableExtra("player") as Player
-        var player2: Player = intent.getSerializableExtra("player2") as Player
+        val player: Player = intent.getSerializableExtra("player") as Player
+        val player2: Player = intent.getSerializableExtra("player2") as Player
 
-        if (player.game == player2.game) {
-            if (player.setPoint == player2.setPoint) {
+        val pointWin = player.pointWin
+        val pointLost = player.pointLost
 
-                if (player.point == player2.point) {
-                    binding.resultTextWinning.setText(R.string.text_equal)
-                } else if (player.point > player2.point) {
-                    binding.resultTextWinning.setText(R.string.text_you)
-                } else {
-                    binding.resultTextWinning.setText(R.string.text_rival)
-                }
-            } else if (player.setPoint > player2.setPoint) {
-                binding.resultTextWinning.setText(R.string.text_you)
-            } else {
-                binding.resultTextWinning.setText(R.string.text_rival)
-            }
-        } else if (player.game > player2.game) {
-            binding.resultTextWinning.setText(R.string.text_you)
-        } else {
-            binding.resultTextWinning.setText(R.string.text_rival)
-        }
+        val total = pointWin+pointLost
+        val result = String.format("%.2f",(pointWin / total)*100)
+
+        setTextWinning(player.point, player2.point, player.setPoint, player2.setPoint, player.game, player2.game)
 
         when(intent.getStringExtra("games")) {
             "3"-> binding.textgamesToWin.setText(R.string.text_win_3_games)
@@ -55,18 +42,32 @@ class InfoActivity : Activity() {
         }
 
         binding.resultTimePlayed.text = intent.getStringExtra("timePlayed")+" min"
-
-
-        var pointWin = player.pointWin
-        var pointLost = player.pointLost
-
         binding.resultPointWins.text = pointWin.toInt().toString()
         binding.resultPointLost.text = pointLost.toInt().toString()
-
-        var total = pointWin+pointLost
-        var result = String.format("%.2f",(pointWin / total)*100)
         binding.resultWL.text = result.toString()+"%"
 
 
+    }
+
+    private fun setTextWinning(point1: Int, point2: Int, set1: Int, set2: Int, game1: Int, game2: Int) :Unit {
+        if (game1 == game2) {
+            if (set1 == set2) {
+                if (point1 == point2) {
+                    binding.resultTextWinning.setText(R.string.text_equal)
+                } else if (point1 > point2) {
+                    binding.resultTextWinning.setText(R.string.text_you)
+                } else {
+                    binding.resultTextWinning.setText(R.string.text_rival)
+                }
+            } else if (set1 > set2) {
+                binding.resultTextWinning.setText(R.string.text_you)
+            } else {
+                binding.resultTextWinning.setText(R.string.text_rival)
+            }
+        } else if (game1 > game2) {
+            binding.resultTextWinning.setText(R.string.text_you)
+        } else {
+            binding.resultTextWinning.setText(R.string.text_rival)
+        }
     }
 }

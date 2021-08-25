@@ -29,12 +29,12 @@ class MatchActivity : Activity() {
         setContentView(binding.root)
         runMatch = true
 
-        player1 = Player(0,5,1)
+        player1 = Player(0,0,0)
         player2 = Player(0,0,0)
 
         goldPoint = intent.getBooleanExtra("goldPoint", false)
         game = intent.getIntExtra("games",3)
-        var service = intent.getIntExtra("service",0)
+        val service = intent.getIntExtra("service",0)
         match = Match(service, game, goldPoint)
 
         intArray = intArrayOf(0,0,service)
@@ -63,8 +63,7 @@ class MatchActivity : Activity() {
     }
 
     fun settingClick(view: View) {
-        var time = System.currentTimeMillis()
-        time = (time - tStart)/60000
+        val time = (System.currentTimeMillis() - tStart)/60000
 
         val intent = Intent(this, SettingActivity::class.java)
         intent.putExtra("side", intArray[1].toString())
@@ -114,15 +113,14 @@ class MatchActivity : Activity() {
     }
 
     private fun finishGame() {
-        //cambiar dependiendo de los juegos
-        if (player1.game == 2) {
+        if (player1.game > player2.game) {
             Toast.makeText(this, R.string.end_game_victory, Toast.LENGTH_SHORT).show()
         } else
             Toast.makeText(this, R.string.end_game_faild, Toast.LENGTH_SHORT).show()
+
         runMatch = false
         finish()
-        var intent = Intent(this, SettingActivity::class.java)
-        startActivity(intent)
+        startActivity(Intent(this, SettingActivity::class.java))
     }
 
 }
