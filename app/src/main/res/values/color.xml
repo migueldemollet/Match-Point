@@ -4,8 +4,12 @@
     <color name="ColorBackgraundMarkerPadel">#01DFDF</color>
     <color name="ColorButtonMePadel">#00986d</color>
     <color name="ColorButton_RivalPdel">#d8225b</color>
-    <color name="ColorDark">#303030</color>
+    <color name="ColorDark">#1f1f2c</color>
+    <color name="ColorLight">#f3f3f4</color>
     <color name="ColorBackgroundLightButton">#D9D9D9</color>
     <color name="ColorBackgraundTextViewPointPadel">#fefefe</color>
-    <color name="ColorButtonDark">#5a595b</color>
+    <color name="ColorButtonDark">#262e3c</color>
+    <color name="ColorButtonLight">#fbfbfc</color>
+    <color name="textDark">#f7f8fb</color>
+    <color name="textLight">#565657</color>
 </resources>

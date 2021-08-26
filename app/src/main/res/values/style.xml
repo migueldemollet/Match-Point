@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Dark Scoreboard theme !-->
     <style name="Padel_theme" parent="Theme.AppCompat">
         <item name="android:background">@color/ColorBackgraundPadel</item>
         <item name="android:textViewStyle">@style/Widget.Padel_theme.TextView</item>
@@ -38,24 +39,36 @@
         <item name="android:layout_margin">5dp</item>
     </style>
 
+    <!-- Dark theme !-->
     <style name="dark" parent="Theme.AppCompat.NoActionBar">
         <item name="android:background">@color/ColorDark</item>
+        <item name="android:buttonStyle">@style/Widget.dark.Button</item>
+        <item name="android:textViewStyle">@style/Widget.dark.TextView</item>
     </style>
 
+    <style name="Widget.dark.Button" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/textDark</item>
+        <item name="android:backgroundTint">@color/ColorButtonDark</item>
+    </style>
+
+    <style name="Widget.dark.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/textDark</item>
+    </style>
+
+    <!-- Light theme !-->
     <style name="light" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:background">@color/white</item>
+        <item name="android:background">@color/ColorLight</item>
+        <item name="android:buttonStyle">@style/Widget.light.Button</item>
         <item name="android:textViewStyle">@style/Widget.light.TextView</item>
     </style>
 
-    <style name="Widget.light.Button" parent="Widget.AppCompat.Button">
-        <item name="android:textColor">@color/ColorDark</item>
-        <item name="android:background">@color/ColorBackgroundLightButton</item>
-        <item name="android:padding">5dp</item>
-
+    <style name="Widget.light.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/textLight</item>
     </style>
 
-    <style name="Widget.light.TextView" parent="Widget.AppCompat.TextView">
-        <item name="android:textColor">@color/ColorDark</item>
+    <style name="Widget.light.Button" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/textLight</item>
+        <item name="android:backgroundTint">@color/ColorButtonLight</item>
     </style>
 
 

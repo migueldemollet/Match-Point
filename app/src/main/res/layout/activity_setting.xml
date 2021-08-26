@@ -71,7 +71,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#D61010"
             android:onClick="exitClick"
-            android:text="@string/button_Exit" />
+            android:text="@string/button_Exit"
+            android:textColor="@color/textDark" />
 
     </LinearLayout>
 
