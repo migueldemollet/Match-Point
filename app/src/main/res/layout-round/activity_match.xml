@@ -78,6 +78,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@drawable/custom_textview_left_middle_dark"
                     android:gravity="center"
                     android:text="0" />
 
@@ -97,8 +98,7 @@
 
                 <TextView
                     android:id="@+id/myPoint"
-                    style="@style/Widget.Padel_theme.TextView_point"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/custom_textview_round_left_botton"
@@ -107,8 +107,7 @@
 
                 <TextView
                     android:id="@+id/rivalPoint"
-                    style="@style/Widget.Padel_theme.TextView_point"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/custom_textview_round_right_botton"
@@ -123,23 +122,19 @@
             android:layout_height="match_parent"
             android:layout_marginHorizontal="30dp"
             android:layout_marginBottom="15dp"
-            android:background="#002851"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/me2"
-                style="@style/Widget.Padel_theme.button_me"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:onClick="pointForMe"
-                android:rotation="360"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/rival2"
-                style="@style/Widget.Padel_theme.button_rival"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -154,27 +149,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
+        android:padding="25dp"
         android:visibility="gone">
 
         <Button
             android:id="@+id/meTieBreak"
-            style="@style/Widget.Padel_theme.button_tie_break"
+            style="@style/Widget.dark.Scoreboard.Button.tie_break"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="pointForMe"
-            android:text="0"
-            android:textSize="48sp" />
+            android:text="0" />
 
         <Button
             android:id="@+id/rivalTieBreak"
-            style="@style/Widget.Padel_theme.button_tie_break"
+            style="@style/Widget.dark.Scoreboard.Button.tie_break"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="pointForRival"
-            android:text="0"
-            android:textSize="48sp" />
+            android:text="0" />
     </LinearLayout>
 
 </RelativeLayout>

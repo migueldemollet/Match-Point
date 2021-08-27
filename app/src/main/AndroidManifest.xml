@@ -62,7 +62,7 @@
         <activity
             android:name=".MatchActivity"
             android:exported="true"
-            android:theme="@style/Padel_theme"/>
+            android:theme="@style/dark.Scoreboard"/>
 
     </application>
 
