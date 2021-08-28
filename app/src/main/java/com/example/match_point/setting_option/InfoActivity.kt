@@ -21,8 +21,14 @@ class InfoActivity : Activity() {
         val pointWin = player.pointWin
         val pointLost = player.pointLost
 
-        val total = pointWin+pointLost
-        val result = String.format("%.2f",(pointWin / total)*100)
+        val op = (pointWin / (pointWin+pointLost))*100.0f
+
+        var result = if (op.isNaN()) {
+            String.format("%.2f", 0.0f)
+        } else {
+            String.format("%.2f", op)
+        }
+
 
         setTextWinning(player.point, player2.point, player.setPoint, player2.setPoint, player.game, player2.game)
 
@@ -44,7 +50,7 @@ class InfoActivity : Activity() {
         binding.resultTimePlayed.text = intent.getStringExtra("timePlayed")+" min"
         binding.resultPointWins.text = pointWin.toInt().toString()
         binding.resultPointLost.text = pointLost.toInt().toString()
-        binding.resultWL.text = result.toString()+"%"
+        binding.resultWL.text = result + "%"
 
 
     }

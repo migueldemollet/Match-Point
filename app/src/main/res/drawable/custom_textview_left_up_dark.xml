@@ -6,12 +6,13 @@
                 android:startColor="@color/ColorLight"
                 android:endColor="#262e3c">
             </gradient>
-
+            <corners android:topLeftRadius="2dp" />
         </shape>
     </item>
 
     <item android:right="1dp">
         <shape android:shape="rectangle">
+            <corners android:topLeftRadius="2dp" />
             <solid android:color="#262e3c" />
         </shape>
     </item>
