@@ -19,7 +19,7 @@
     <string name="button_cancel_match">Cancel Match</string>
 
     <!-- Text new match -->
-    <string name="text_best_games">Does the best win over 3 or 5 games?</string>
+    <string name="text_best_sets">Does the best win over 3 or 5 sets?</string>
     <string name="button_cancel">Cancel</string>
     <string name="button_start">Start</string>
     <string name="text_gold_point">Gold point</string>
@@ -36,8 +36,8 @@
     <string name="text_equal">Equal</string>
     <string name="text_left">Left</string>
     <string name="text_right">Right</string>
-    <string name="text_win_3_games">Best 3 games win</string>
-    <string name="text_win_5_games">Best 5 games win</string>
+    <string name="text_win_3_sets">Best 3 sets win</string>
+    <string name="text_win_5_sets">Best 5 sets win</string>
     <string name="text_point_wins">Points wins = </string>
     <string name="text_point_lost">Point lost = </string>
 

@@ -50,7 +50,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/linearLayout2"
-                app:layout_constraintTop_toBottomOf="@+id/textgamesToWin">
+                app:layout_constraintTop_toBottomOf="@+id/textSetsToWin">
 
                 <TextView
                     android:id="@+id/textService"
@@ -90,12 +90,12 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textgamesToWin"
+                android:id="@+id/textSetsToWin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_weight="1"
-                android:text="@string/text_win_3_games"
+                android:text="@string/text_win_3_sets"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/linearLayout2"

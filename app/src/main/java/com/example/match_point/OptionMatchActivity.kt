@@ -27,10 +27,10 @@ class OptionMatchActivity : Activity() {
     }
 
     private fun prepareIntent(intent: Intent) : Unit {
-        if (binding.switchMaxGames!!.isChecked) {
-            intent.putExtra("games",5)
+        if (binding.switchMaxSets!!.isChecked) {
+            intent.putExtra("sets",5)
         } else {
-            intent.putExtra("games",3)
+            intent.putExtra("sets",3)
         }
         if (binding.switchStartService!!.isChecked) {
             intent.putExtra("service",1)

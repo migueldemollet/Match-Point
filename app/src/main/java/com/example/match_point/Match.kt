@@ -1,12 +1,12 @@
 package com.example.match_point
 
 
-class Match(service: Int, games: Int, goldPoint: Boolean) {
+class Match(service: Int, sets: Int, goldPoint: Boolean) {
     private var isTieBreak = false
     private var state = 0
     private var side = 0
     private var service = service
-    private val games = games
+    private val sets = sets
     private val goldPoint = goldPoint
 
     fun point(playerWin: Player, playerLost: Player) : IntArray {
@@ -20,7 +20,7 @@ class Match(service: Int, games: Int, goldPoint: Boolean) {
             tieBreak(playerWin, playerLost)
 
         } else if (playerWin.point == 4 && playerWin.point - 1 > playerLost.point) {
-            set(playerWin, playerLost)
+            game(playerWin, playerLost)
             side = 0
             changeService()
 
@@ -29,24 +29,24 @@ class Match(service: Int, games: Int, goldPoint: Boolean) {
             playerLost.point = 3
 
         } else if (playerWin.point == 5 && playerLost.point == 3) {
-            set(playerWin, playerLost)
+            game(playerWin, playerLost)
             side = 0
             changeService()
 
         } else if (goldPoint && playerWin.point == 4 && playerLost.point == 3) {
-            set(playerWin, playerLost)
+            game(playerWin, playerLost)
             side = 0
             changeService()
         }
 
-        when(games) {
+        when(sets) {
             3 -> {
-                if (playerWin.game == 2) {
+                if (playerWin.setPoint == 2) {
                     state = 2
                 }
             }
             5 -> {
-                if (playerWin.game == 3) {
+                if (playerWin.setPoint == 3) {
                     state = 2
                 }
             }
@@ -55,31 +55,32 @@ class Match(service: Int, games: Int, goldPoint: Boolean) {
         return intArrayOf(state, side, service)
     }
 
-    private fun set(playerWin: Player, playerLost: Player): Unit {
-        playerWin.addSet(playerLost)
+    private fun game(playerWin: Player, playerLost: Player): Unit {
+        playerWin.addGame(playerLost)
 
-        if (playerWin.setPoint == 6 && playerWin.setPoint - 2 >= playerLost.setPoint) {
-            game(playerWin, playerLost)
+        if (playerWin.game >= 6 && playerWin.game - 2 >= playerLost.game) {
+            set(playerWin, playerLost)
 
-        } else if (playerWin.setPoint == 7 && playerLost.setPoint == 6) {
-            game(playerWin, playerLost)
-
+        } else if (playerWin.game == 6 && playerLost.game == 6) {
+            state = 1
+            isTieBreak = true
+            tieBreak(playerWin, playerLost)
         }
 
     }
 
-    private fun game(playerWin: Player, playerLost: Player): Unit {
-        playerWin.addGame(playerLost)
-        when(games) {
+    private fun set(playerWin: Player, playerLost: Player): Unit {
+        playerWin.addSet(playerLost)
+        when(sets) {
             3-> {
-                if (playerWin.game == 1 && playerLost.game == 1) {
+                if (playerWin.setPoint == 1 && playerLost.setPoint == 1) {
                     state = 1
                     isTieBreak = true
                     tieBreak(playerWin, playerLost)
                 }
             }
             5 -> {
-                if (playerWin.game == 2 && playerLost.game == 2) {
+                if (playerWin.setPoint == 2 && playerLost.setPoint == 2) {
                     state = 1
                     isTieBreak = true
                     tieBreak(playerWin, playerLost)
@@ -91,23 +92,23 @@ class Match(service: Int, games: Int, goldPoint: Boolean) {
     private fun tieBreak(playerWin: Player, playerLost: Player): Unit {
 
         if (playerWin.point >= 7 && playerWin.point - 2 >= playerLost.point) {
-            game(playerWin, playerLost)
+            set(playerWin, playerLost)
             isTieBreak = false
             state = 0
         }
     }
 
     private fun changeSide() : Unit {
-        if (side == 0) {
-            side = 1
+        side = if (side == 0) {
+            1
         } else
-            side = 0
+            0
     }
 
     private fun changeService() : Unit {
-        if (service == 0) {
-            service = 1
+        service = if (service == 0) {
+            1
         } else
-            service = 0
+            0
     }
 }

@@ -30,11 +30,11 @@ class InfoActivity : Activity() {
         }
 
 
-        setTextWinning(player.point, player2.point, player.setPoint, player2.setPoint, player.game, player2.game)
+        setTextWinning(player.point, player2.point, player.game, player2.game, player.setPoint, player2.setPoint)
 
-        when(intent.getStringExtra("games")) {
-            "3"-> binding.textgamesToWin.setText(R.string.text_win_3_games)
-            "5" -> binding.textgamesToWin.setText(R.string.text_win_5_games)
+        when(intent.getStringExtra("sets")) {
+            "3"-> binding.textSetsToWin.setText(R.string.text_win_3_sets)
+            "5" -> binding.textSetsToWin.setText(R.string.text_win_5_sets)
         }
 
         when(intent.getStringExtra("service")) {
@@ -55,9 +55,9 @@ class InfoActivity : Activity() {
 
     }
 
-    private fun setTextWinning(point1: Int, point2: Int, set1: Int, set2: Int, game1: Int, game2: Int) :Unit {
-        if (game1 == game2) {
-            if (set1 == set2) {
+    private fun setTextWinning(point1: Int, point2: Int, game1: Int, game2: Int, set1: Int, set2: Int) :Unit {
+        if (set1 == set2) {
+            if (game1 == game2) {
                 if (point1 == point2) {
                     binding.resultTextWinning.setText(R.string.text_equal)
                 } else if (point1 > point2) {
@@ -65,12 +65,12 @@ class InfoActivity : Activity() {
                 } else {
                     binding.resultTextWinning.setText(R.string.text_rival)
                 }
-            } else if (set1 > set2) {
+            } else if (game1 > game2) {
                 binding.resultTextWinning.setText(R.string.text_you)
             } else {
                 binding.resultTextWinning.setText(R.string.text_rival)
             }
-        } else if (game1 > game2) {
+        } else if (set1 > set2) {
             binding.resultTextWinning.setText(R.string.text_you)
         } else {
             binding.resultTextWinning.setText(R.string.text_rival)

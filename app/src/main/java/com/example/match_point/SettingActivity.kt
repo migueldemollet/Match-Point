@@ -49,7 +49,7 @@ class SettingActivity: Activity() {
         intent2.putExtra("service", intent.getStringExtra("service"))
         intent2.putExtra("player", intent.getSerializableExtra("player"))
         intent2.putExtra("player2", intent.getSerializableExtra("player2"))
-        intent2.putExtra("games", intent.getStringExtra("games"))
+        intent2.putExtra("sets", intent.getStringExtra("sets"))
 
         startActivity(intent2)
     }

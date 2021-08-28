@@ -16,8 +16,8 @@
     <string name="text_rival">Rival</string>
     <string name="text_left">Izquierda</string>
     <string name="text_right">Derecha</string>
-    <string name="text_win_3_games">Gana al mejor de 3 jeugos</string>
-    <string name="text_win_5_games">Gana al mejor de 5 juegos</string>
+    <string name="text_win_3_sets">Gana al mejor de 3 sets</string>
+    <string name="text_win_5_sets">Gana al mejor de 5 sets</string>
     <string name="text_point_wins">"Puntos ganados = "</string>
     <string name="text_point_lost">"Puntos perdidos = "</string>
     <string name="text_equal">Iguales</string>
@@ -36,4 +36,5 @@
     <string name="text_best_games">Gana el mejor a 3 o 5 juegos?</string>
     <string name="button_cancel_match">Cancelar Partido</string>
     <string name="text_who_start">Quien empieza sacando?</string>
+    <string name="text_best_sets">Gana el mejor a 3 o 5 sets?</string>
 </resources>

@@ -20,7 +20,7 @@ class MatchActivity : Activity() {
     private lateinit var match: Match
     private lateinit var binding: ActivityMatchBinding
     private var goldPoint by Delegates.notNull<Boolean>()
-    private var game by Delegates.notNull<Int>()
+    private var set by Delegates.notNull<Int>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,13 +29,13 @@ class MatchActivity : Activity() {
         setContentView(binding.root)
         runMatch = true
 
-        player1 = Player(0,0,0)
-        player2 = Player(0,0,0)
+        player1 = Player(0,6,0)
+        player2 = Player(0,5,0)
 
         goldPoint = intent.getBooleanExtra("goldPoint", false)
-        game = intent.getIntExtra("games",3)
+        set = intent.getIntExtra("sets",3)
         val service = intent.getIntExtra("service",0)
-        match = Match(service, game, goldPoint)
+        match = Match(service, set, goldPoint)
 
         intArray = intArrayOf(0,0,service)
 
@@ -71,7 +71,7 @@ class MatchActivity : Activity() {
         intent.putExtra("service", intArray[2].toString())
         intent.putExtra("player", player1)
         intent.putExtra("player2", player2)
-        intent.putExtra("games", game.toString())
+        intent.putExtra("sets", set.toString())
 
         startActivity(intent)
     }
@@ -96,10 +96,11 @@ class MatchActivity : Activity() {
             4 -> binding.rivalPoint.text ="AD"
         }
 
-        binding.mySet.text = player1.setPoint.toString()
-        binding.rivalSet.text = player2.setPoint.toString()
         binding.myGame.text = player1.game.toString()
         binding.rivalGame.text = player2.game.toString()
+        binding.mySet.text = player1.setPoint.toString()
+        binding.rivalSet.text = player2.setPoint.toString()
+
 
     }
 
@@ -113,7 +114,7 @@ class MatchActivity : Activity() {
     }
 
     private fun finishGame() {
-        if (player1.game > player2.game) {
+        if (player1.setPoint > player2.setPoint) {
             Toast.makeText(this, R.string.end_game_victory, Toast.LENGTH_SHORT).show()
         } else
             Toast.makeText(this, R.string.end_game_faild, Toast.LENGTH_SHORT).show()
