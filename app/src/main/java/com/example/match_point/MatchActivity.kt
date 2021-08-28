@@ -29,8 +29,8 @@ class MatchActivity : Activity() {
         setContentView(binding.root)
         runMatch = true
 
-        player1 = Player(0,6,0)
-        player2 = Player(0,5,0)
+        player1 = Player(0,0,0)
+        player2 = Player(0,0,0)
 
         goldPoint = intent.getBooleanExtra("goldPoint", false)
         set = intent.getIntExtra("sets",3)
