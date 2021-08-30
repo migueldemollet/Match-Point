@@ -7,7 +7,7 @@
     tools:context=".setting_option.ThemeActivity">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/rivalGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="theme"
