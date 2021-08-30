@@ -11,26 +11,6 @@
         <item name="android:textColor">@color/textDark</item>
     </style>
 
-    <style name="Widget.dark.Scoreboard.TextView.point" parent="Widget.AppCompat.TextView">
-        <item name="android:background">@drawable/custom_textview_point</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/ColorBackgraundPadel</item>
-    </style>
-
-    <style name="Widget.dark.Scoreboard.TextView.point.goldPoint">
-        <item name="android:background">@drawable/custom_gold_point</item>
-    </style>
-
-    <style name="Widget.dark.Scoreboard.Button.me" parent="Widget.AppCompat.Button">
-        <item name="android:background">@color/ColorButtonMePadel</item>
-        <item name="android:layout_margin">5dp</item>
-    </style>
-
-    <style name="Widget.dark.Scoreboard.Button.rival" parent="Widget.AppCompat.Button">
-        <item name="android:background">@color/ColorButton_RivalPdel</item>
-        <item name="android:layout_margin">5dp</item>
-    </style>
-
     <style name="Widget.dark.Scoreboard.Button.tie_break" parent="Widget.AppCompat.Button">
         <item name="android:textColor">@color/textDark</item>
         <item name="android:backgroundTint">@color/ColorButtonDark</item>
