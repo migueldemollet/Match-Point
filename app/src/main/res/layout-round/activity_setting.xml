@@ -20,6 +20,8 @@
             android:id="@+id/BtnNewMatch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="3dp"
+            android:background="@drawable/custom_button_round_dark"
             android:onClick="newMatchClick"
             android:text="@string/button_new_macth" />
 
@@ -27,6 +29,8 @@
             android:id="@+id/BtnBackMatch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="3dp"
+            android:background="@drawable/custom_button_round_dark"
             android:onClick="backMatchClick"
             android:text="@string/button_back_macth" />
 
@@ -34,6 +38,8 @@
             android:id="@+id/BtnInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="3dp"
+            android:background="@drawable/custom_button_round_dark"
             android:onClick="infoClick"
             android:text="@string/button_Info" />
 
@@ -41,6 +47,8 @@
             android:id="@+id/BtnStatistics"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="3dp"
+            android:background="@drawable/custom_button_round_dark"
             android:onClick="staticsClick"
             android:text="@string/button_Statics"
             android:visibility="gone" />
@@ -49,6 +57,8 @@
             android:id="@+id/BtnTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="3dp"
+            android:background="@drawable/custom_button_round_dark"
             android:onClick="themeClick"
             android:text="@string/button_Theme"
             android:visibility="gone" />
@@ -57,6 +67,8 @@
             android:id="@+id/BtnHelp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="3dp"
+            android:background="@drawable/custom_button_round_dark"
             android:onClick="helpClick"
             android:text="@string/button_Help" />
 
@@ -64,6 +76,8 @@
             android:id="@+id/BtnAbout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="3dp"
+            android:background="@drawable/custom_button_round_dark"
             android:onClick="aboutClick"
             android:text="@string/button_About" />
 
@@ -71,6 +85,8 @@
             android:id="@+id/BtnExit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="3dp"
+            android:background="@drawable/custom_button_round_dark"
             android:backgroundTint="#D61010"
             android:onClick="exitClick"
             android:text="@string/button_Exit"
