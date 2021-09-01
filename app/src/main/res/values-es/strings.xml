@@ -37,4 +37,9 @@
     <string name="button_cancel_match">Cancelar Partido</string>
     <string name="text_who_start">Quien empieza sacando?</string>
     <string name="text_best_sets">Gana el mejor a 3 o 5 sets?</string>
+    <string name="text_green">Pulsando el botón verde aumenta puntos a tu favor.</string>
+    <string name="text_red">Pulsando el botón rojo aumenta puntos a favor del rival.</string>
+    <string name="text_blue">"Para consultar datos o cancelar el partido pulsa el marcador (esta en azul). "</string>
+    <string name="text_menu">En el menu puedes realizar diferentes acciones, como volver al partido, consultar datos de el o cancelarlo.</string>
+    <string name="text_cancel">Pulsando el botón rojo cancelas el partido.</string>
 </resources>

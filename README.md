@@ -8,8 +8,6 @@ Match point is a simple project to keep track of the points in sports such as pa
 
 Have a smartwatch.
 
-!! Alert the interface is designed exclusively for square clocks, it will be adapted to other shapes soon, but it works perfectly with other shapes only it won't look as good as in the square.
-
 ## Built with 🛠️
 
 * [Android Studio](https://developer.android.com/) - The IDE used.

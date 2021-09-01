@@ -49,6 +49,13 @@
     <string name="text_source_code">If you want to access the source code of the program, access the following link. https://github.com/migueldemollet/Match-Point</string>
     <string name="text_creator">Created by Miguel del Arco.</string>
 
+    <!-- Text help -->
+    <string name="text_green">Pressing the green button increases points in your favor.</string>
+    <string name="text_red">Pressing the red button increases points in favor of the rival.</string>
+    <string name="text_blue">To consult data or cancel the game, press the marker (it is in blue).</string>
+    <string name="text_menu">In the menu you can carry out different actions, such as returning to the game, consulting data about it or canceling it.</string>
+    <string name="text_cancel">Pressing the red button cancels the match.</string>
+
     <!-- Text Theme -->
     <style name="textThemeChanged">Theme changed successfully</style>
 
