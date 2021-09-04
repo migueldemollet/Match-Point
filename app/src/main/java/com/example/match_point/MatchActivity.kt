@@ -114,14 +114,25 @@ class MatchActivity : Activity() {
     }
 
     private fun finishGame() {
-        if (player1.setPoint > player2.setPoint) {
+        val winner = if (player1.setPoint > player2.setPoint) {
+            0
+        } else {
+            1
+        }
+        if (winner == 0) {
             Toast.makeText(this, R.string.end_game_victory, Toast.LENGTH_SHORT).show()
         } else
             Toast.makeText(this, R.string.end_game_faild, Toast.LENGTH_SHORT).show()
 
         runMatch = false
         finish()
-        startActivity(Intent(this, SettingActivity::class.java))
+
+        val intent = Intent(this, ResultActivity::class.java)
+        intent.putExtra("winner", winner)
+        intent.putExtra("player", player1)
+        intent.putExtra("player2", player2)
+        intent.putExtra("sets", set)
+        startActivity(intent)
     }
 
 }

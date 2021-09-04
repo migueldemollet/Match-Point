@@ -33,7 +33,6 @@
     <string name="button_cancel">Cancelar</string>
     <string name="button_start">Empezar</string>
     <string name="text_gold_point">Punto de oro</string>
-    <string name="text_best_games">Gana el mejor a 3 o 5 juegos?</string>
     <string name="button_cancel_match">Cancelar Partido</string>
     <string name="text_who_start">Quien empieza sacando?</string>
     <string name="text_best_sets">Gana el mejor a 3 o 5 sets?</string>
@@ -42,4 +41,7 @@
     <string name="text_blue">"Para consultar datos o cancelar el partido pulsa el marcador (esta en azul). "</string>
     <string name="text_menu">En el menu puedes realizar diferentes acciones, como volver al partido, consultar datos de el o cancelarlo.</string>
     <string name="text_cancel">Pulsando el botón rojo cancelas el partido.</string>
+    <string name="text_total_points">"Puntos totales = "</string>
+    <string name="text_result">Resultado</string>
+    <string name="button_back_menu">Volver al menu</string>
 </resources>

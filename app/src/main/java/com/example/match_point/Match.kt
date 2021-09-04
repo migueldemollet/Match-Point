@@ -56,10 +56,12 @@ class Match(service: Int, sets: Int, goldPoint: Boolean) {
     }
 
     private fun game(playerWin: Player, playerLost: Player): Unit {
-        playerWin.addGame(playerLost)
+        playerWin.addGame()
+        playerLost.lostGame()
 
         if (playerWin.game >= 6 && playerWin.game - 2 >= playerLost.game) {
-            playerWin.addSet(playerLost)
+            playerWin.addSet()
+            playerLost.lostSet()
 
         } else if (playerWin.game == 6 && playerLost.game == 6) {
             state = 1
@@ -72,7 +74,9 @@ class Match(service: Int, sets: Int, goldPoint: Boolean) {
     private fun tieBreak(playerWin: Player, playerLost: Player): Unit {
 
         if (playerWin.point >= 7 && playerWin.point - 2 >= playerLost.point) {
-            playerWin.addSet(playerLost)
+            playerWin.addGame()
+            playerWin.addSet()
+            playerLost.lostSet()
             isTieBreak = false
             state = 0
         }

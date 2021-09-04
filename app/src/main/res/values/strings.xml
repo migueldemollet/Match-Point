@@ -56,6 +56,11 @@
     <string name="text_menu">In the menu you can carry out different actions, such as returning to the game, consulting data about it or canceling it.</string>
     <string name="text_cancel">Pressing the red button cancels the match.</string>
 
+    <!-- Text Result -->
+    <string name="text_result">Result</string>
+    <string name="text_total_points">Total points = </string>
+    <string name="button_back_menu">Back to menu</string>
+
     <!-- Text Theme -->
     <style name="textThemeChanged">Theme changed successfully</style>
 
