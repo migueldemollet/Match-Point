@@ -57,34 +57,4 @@
       <item name="android:backgroundTint">@color/ColorButtonLight</item>
     </style>
 
-
-    <!-- old theme !-->
-
-    <style name="Padel_theme">
-      <item name="android:textViewStyle">@style/Widget.dark.Scoreboard.TextView</item>
-    </style>
-
-    <style name="Widget.Padel_theme.TextView_point" parent="Widget.AppCompat.TextView">
-      <item name="android:background">@drawable/custom_textview_point</item>
-      <item name="android:gravity">center</item>
-      <item name="android:textColor">@color/ColorBackgraundPadel</item>
-    </style>
-
-    <style name="Widget.Padel_theme.button_me" parent="Widget.AppCompat.Button">
-      <item name="android:background">@color/ColorButtonMePadel</item>
-      <item name="android:layout_margin">5dp</item>
-    </style>
-
-    <style name="Widget.Padel_theme.button_rival" parent="Widget.AppCompat.Button">
-      <item name="android:background">@color/ColorButton_RivalPdel</item>
-      <item name="android:layout_margin">5dp</item>
-    </style>
-
-    <style name="Widget.Padel_theme.button_tie_break" parent="Widget.AppCompat.Button">
-      <item name="android:textColor">@color/textDark</item>
-      <item name="android:backgroundTint">@color/ColorButtonDark</item>
-      <item name="android:textSize">48sp</item>
-      <item name="android:layout_margin">5dp</item>
-    </style>
-
 </resources>

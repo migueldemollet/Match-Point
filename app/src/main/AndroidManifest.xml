@@ -42,10 +42,6 @@
             android:exported="true"
             android:theme="@style/dark" />
         <activity
-            android:name=".setting_option.ThemeActivity"
-            android:exported="true"
-            android:theme="@style/dark" />
-        <activity
             android:name=".setting_option.InfoActivity"
             android:exported="true"
             android:theme="@style/dark" />

@@ -9,7 +9,6 @@ import com.example.match_point.databinding.ActivitySettingBinding
 import com.example.match_point.setting_option.AboutActivity
 import com.example.match_point.setting_option.HelpActivity
 import com.example.match_point.setting_option.InfoActivity
-import com.example.match_point.setting_option.ThemeActivity
 
 var runMatch: Boolean = false
 
@@ -55,10 +54,6 @@ class SettingActivity: Activity() {
         startActivity(intent2)
     }
 
-    fun themeClick(view: View) {
-        startActivity(Intent(this, ThemeActivity::class.java))
-    }
-
     fun helpClick(view: View) {
         startActivity(Intent(this, HelpActivity::class.java))
     }
@@ -79,9 +74,6 @@ class SettingActivity: Activity() {
 
     fun newMatchClick(view: View) {
         startActivity(Intent(this, OptionMatchActivity::class.java))
-    }
-    fun staticsClick(view: View) {
-        startActivity(Intent(this, StaticActivity::class.java))
     }
 
     fun backMatchClick(view: View) {

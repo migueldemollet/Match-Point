@@ -44,26 +44,6 @@
             android:text="@string/button_Info" />
 
         <Button
-            android:id="@+id/BtnStatistics"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="3dp"
-            android:background="@drawable/custom_button_round_dark"
-            android:onClick="staticsClick"
-            android:text="@string/button_Statics"
-            android:visibility="gone" />
-
-        <Button
-            android:id="@+id/BtnTheme"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="3dp"
-            android:background="@drawable/custom_button_round_dark"
-            android:onClick="themeClick"
-            android:text="@string/button_Theme"
-            android:visibility="gone" />
-
-        <Button
             android:id="@+id/BtnHelp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
