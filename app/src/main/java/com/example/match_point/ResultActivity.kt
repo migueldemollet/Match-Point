@@ -20,6 +20,12 @@ class ResultActivity : Activity() {
         val player: Player = intent.getSerializableExtra("player") as Player
         val player2: Player = intent.getSerializableExtra("player2") as Player
 
+        val pointWin = player.pointWin
+        val pointLost = player.pointLost
+
+        val result = String.format("%.2f",(pointWin / (pointWin+pointLost))*100.0f)
+
+
         if (intent.getIntExtra("winner",0) == 0) {
             binding.textResult.setText(R.string.end_game_victory)
         } else {
@@ -39,6 +45,11 @@ class ResultActivity : Activity() {
         }
 
         binding.resultTotalPoints.text = (player.pointWin + player.pointLost).toInt().toString()
+
+        binding.resultTimePlayed.text = intent.getStringExtra("timePlayed")+" min"
+        binding.resultPointWins.text = pointWin.toInt().toString()
+        binding.resultPointLost.text = pointLost.toInt().toString()
+        binding.resultWL.text = result + "%"
 
     }
 

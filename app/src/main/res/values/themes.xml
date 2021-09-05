@@ -1,4 +1,90 @@
 <resources>
   <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
   <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Dark Scoreboard theme !-->
+    <style name="dark.Scoreboard">
+      <item name="android:textViewStyle">@style/Widget.dark.Scoreboard.TextView</item>
+    </style>
+
+    <style name="Widget.dark.Scoreboard.TextView" parent="Widget.AppCompat.TextView">
+      <item name="android:background">@color/ColorButtonDark</item>
+      <item name="android:gravity">center</item>
+      <item name="android:textColor">@color/textDark</item>
+    </style>
+
+    <style name="Widget.dark.Scoreboard.Button.tie_break" parent="Widget.AppCompat.Button">
+      <item name="android:textColor">@color/textDark</item>
+      <item name="android:backgroundTint">@color/ColorButtonDark</item>
+      <item name="android:textSize">48sp</item>
+      <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <!-- Dark theme !-->
+    <style name="dark" parent="Theme.AppCompat.NoActionBar">
+      <item name="android:background">@color/ColorDark</item>
+      <item name="android:buttonStyle">@style/Widget.dark.Button</item>
+      <item name="android:textViewStyle">@style/Widget.dark.TextView</item>
+    </style>
+
+    <style name="Widget.dark.Button" parent="Widget.AppCompat.Button">
+      <item name="android:textColor">@color/textDark</item>
+      <item name="android:backgroundTint">@color/ColorButtonDark</item>
+    </style>
+
+    <style name="Widget.dark.TextView" parent="Widget.AppCompat.TextView">
+      <item name="android:textColor">@color/textDark</item>
+    </style>
+
+    <!--  Dark splash screen theme !-->
+    <style name="dark.SplashTheme">
+      <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+
+    <!-- Light theme !-->
+    <style name="light" parent="Theme.AppCompat.NoActionBar">
+      <item name="android:background">@color/ColorLight</item>
+      <item name="android:buttonStyle">@style/Widget.light.Button</item>
+      <item name="android:textViewStyle">@style/Widget.light.TextView</item>
+    </style>
+
+    <style name="Widget.light.TextView" parent="Widget.AppCompat.TextView">
+      <item name="android:textColor">@color/textLight</item>
+    </style>
+
+    <style name="Widget.light.Button" parent="Widget.AppCompat.Button">
+      <item name="android:textColor">@color/textLight</item>
+      <item name="android:backgroundTint">@color/ColorButtonLight</item>
+    </style>
+
+
+    <!-- old theme !-->
+
+    <style name="Padel_theme">
+      <item name="android:textViewStyle">@style/Widget.dark.Scoreboard.TextView</item>
+    </style>
+
+    <style name="Widget.Padel_theme.TextView_point" parent="Widget.AppCompat.TextView">
+      <item name="android:background">@drawable/custom_textview_point</item>
+      <item name="android:gravity">center</item>
+      <item name="android:textColor">@color/ColorBackgraundPadel</item>
+    </style>
+
+    <style name="Widget.Padel_theme.button_me" parent="Widget.AppCompat.Button">
+      <item name="android:background">@color/ColorButtonMePadel</item>
+      <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="Widget.Padel_theme.button_rival" parent="Widget.AppCompat.Button">
+      <item name="android:background">@color/ColorButton_RivalPdel</item>
+      <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="Widget.Padel_theme.button_tie_break" parent="Widget.AppCompat.Button">
+      <item name="android:textColor">@color/textDark</item>
+      <item name="android:backgroundTint">@color/ColorButtonDark</item>
+      <item name="android:textSize">48sp</item>
+      <item name="android:layout_margin">5dp</item>
+    </style>
+
 </resources>

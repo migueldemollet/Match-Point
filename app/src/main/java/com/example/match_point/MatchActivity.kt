@@ -127,11 +127,15 @@ class MatchActivity : Activity() {
         runMatch = false
         finish()
 
+        val time = (System.currentTimeMillis() - tStart)/60000
+
         val intent = Intent(this, ResultActivity::class.java)
         intent.putExtra("winner", winner)
         intent.putExtra("player", player1)
         intent.putExtra("player2", player2)
         intent.putExtra("sets", set)
+        intent.putExtra("timePlayed", time.toString())
+
         startActivity(intent)
     }
 

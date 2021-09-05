@@ -18,6 +18,7 @@ class SettingActivity: Activity() {
     private lateinit var binding: ActivitySettingBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.dark)
         super.onCreate(savedInstanceState)
 
         binding = ActivitySettingBinding.inflate(layoutInflater)
