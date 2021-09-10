@@ -1,9 +1,9 @@
-package com.example.match_point
+package com.miguel.match_point
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import com.example.match_point.databinding.ActivityResultBinding
+import com.miguel.match_point.databinding.ActivityResultBinding
 import android.view.View
 
 

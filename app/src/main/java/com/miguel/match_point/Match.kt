@@ -1,4 +1,4 @@
-package com.example.match_point
+package com.miguel.match_point
 
 
 class Match(service: Int, sets: Int, goldPoint: Boolean) {

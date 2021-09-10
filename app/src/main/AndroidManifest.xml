@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.match_point">
+    package="com.miguel.match_point">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
@@ -14,10 +14,10 @@
         android:roundIcon="@mipmap/match_point_logo_round"
         android:theme="@style/dark">
         <activity
-            android:name=".ResultActivity"
+            android:name="com.miguel.match_point.ResultActivity"
             android:exported="true" />
         <activity
-            android:name=".SettingActivity"
+            android:name="com.miguel.match_point.SettingActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -27,19 +27,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".OptionMatchActivity"
+            android:name="com.miguel.match_point.OptionMatchActivity"
             android:exported="true"
             android:theme="@style/dark" />
         <activity
-            android:name=".setting_option.AboutActivity"
+            android:name="com.miguel.match_point.setting_option.AboutActivity"
             android:exported="true"
             android:theme="@style/dark" />
         <activity
-            android:name=".setting_option.HelpActivity"
+            android:name="com.miguel.match_point.setting_option.HelpActivity"
             android:exported="true"
             android:theme="@style/dark" />
         <activity
-            android:name=".setting_option.InfoActivity"
+            android:name="com.miguel.match_point.setting_option.InfoActivity"
             android:exported="true"
             android:theme="@style/dark" />
 
@@ -55,7 +55,7 @@
             android:value="true" />
 
         <activity
-            android:name=".MatchActivity"
+            android:name="com.miguel.match_point.MatchActivity"
             android:exported="true"
             android:theme="@style/dark.Scoreboard" />
     </application>

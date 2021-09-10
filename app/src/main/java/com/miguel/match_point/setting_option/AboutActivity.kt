@@ -1,8 +1,8 @@
-package com.example.match_point.setting_option
+package com.miguel.match_point.setting_option
 
 import android.app.Activity
 import android.os.Bundle
-import com.example.match_point.databinding.ActivityAboutBinding
+import com.miguel.match_point.databinding.ActivityAboutBinding
 
 class AboutActivity : Activity() {
 

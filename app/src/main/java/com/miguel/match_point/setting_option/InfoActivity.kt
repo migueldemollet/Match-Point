@@ -1,10 +1,10 @@
-package com.example.match_point.setting_option
+package com.miguel.match_point.setting_option
 
 import android.app.Activity
 import android.os.Bundle
-import com.example.match_point.Player
-import com.example.match_point.R
-import com.example.match_point.databinding.ActivityInfoBinding
+import com.miguel.match_point.Player
+import com.miguel.match_point.R
+import com.miguel.match_point.databinding.ActivityInfoBinding
 
 class InfoActivity : Activity() {
 

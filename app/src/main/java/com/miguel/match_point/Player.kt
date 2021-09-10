@@ -1,4 +1,4 @@
-package com.example.match_point
+package com.miguel.match_point
 
 import java.io.Serializable
 

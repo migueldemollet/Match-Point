@@ -1,10 +1,10 @@
-package com.example.match_point
+package com.miguel.match_point
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import com.example.match_point.databinding.ActivityOptionMatchBinding
+import com.miguel.match_point.databinding.ActivityOptionMatchBinding
 
 class OptionMatchActivity : Activity() {
 

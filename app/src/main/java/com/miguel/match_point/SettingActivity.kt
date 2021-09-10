@@ -1,14 +1,14 @@
-package com.example.match_point
+package com.miguel.match_point
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.core.view.isGone
-import com.example.match_point.databinding.ActivitySettingBinding
-import com.example.match_point.setting_option.AboutActivity
-import com.example.match_point.setting_option.HelpActivity
-import com.example.match_point.setting_option.InfoActivity
+import com.miguel.match_point.databinding.ActivitySettingBinding
+import com.miguel.match_point.setting_option.AboutActivity
+import com.miguel.match_point.setting_option.HelpActivity
+import com.miguel.match_point.setting_option.InfoActivity
 
 var runMatch: Boolean = false
 

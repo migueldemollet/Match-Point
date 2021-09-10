@@ -9,7 +9,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.example.match_point"
+        applicationId "com.miguel.match_point"
         minSdk 28
         targetSdk 31
         versionCode 1
