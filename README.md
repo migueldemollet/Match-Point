@@ -15,8 +15,9 @@ Have a smartwatch.
 
 ## Authors ✒️
 
-* **Miguel del Arco** - [migueldemollet](https://github.com/migueldemollet)
+* **Miguel del Arco** - Developer - [migueldemollet](https://github.com/migueldemollet)
+* **Laia Guerrero** - Graphic designer - [Contact email](mailto:laiaguerrero99@gmail.com)
 
-## Licencia 📄
+## License 📄
 
 This project is under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
