@@ -8,6 +8,9 @@ Match point is a simple project to keep track of the points in sports such as pa
 
 Have a smartwatch.
 
+## Download 
+You can download Match Point following the next link: [Play Store](https://play.google.com/store/apps/details?id=com.miguel.match_point)
+
 ## Built with 🛠️
 
 * [Android Studio](https://developer.android.com/) - The IDE used.
