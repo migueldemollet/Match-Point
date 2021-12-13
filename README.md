@@ -1,5 +1,5 @@
 # Match Point
-Match point is a simple project to keep track of the points in sports such as paddle tennis or tennis on your wrist to prevent your cheating friends from adding or stealing points from you.
+Match point is a application to keep track of the points in sports such as paddle tennis or tennis on your wrist to prevent your cheating friends from adding or stealing points from you.
 
 ![Start](https://github.com/migueldemollet/Match-Point/blob/master/app/src/main/res/raw/gitimage1.png)
 ![tie break](https://github.com/migueldemollet/Match-Point/blob/master/app/src/main/res/raw/gitimage2.png)
